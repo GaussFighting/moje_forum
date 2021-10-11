@@ -3,17 +3,16 @@ import { Media, Alert, Button } from 'reactstrap';
 
 
 function PostComponent(props) {
-    console.log("post");
-    console.log(props);
+console.log(props);
     return (
         <div>
-            <Alert color="warning">{props.post.data}</Alert>
+            <Alert color="warning">{props.data}</Alert>
             <Media>
                 <Media body>
                     <Media heading>
-                        {props.post.author} 
+                        {props.username} 
                     </Media>
-                        {props.post.text}
+                        {props.text}
                 </Media>
             </Media>
             
