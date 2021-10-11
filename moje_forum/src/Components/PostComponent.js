@@ -5,7 +5,7 @@ import { Media, Alert, Button } from 'reactstrap';
 function PostComponent(props) {
 console.log(props);
     return (
-        <div>
+        <div key={JSON.stringify(props.id)}>
             <Alert color="warning">{props.data}</Alert>
             <Media>
                 <Media body>
