@@ -1,10 +1,23 @@
 import React from "react";
+import { Media, Alert, Button } from 'reactstrap';
 
-function PostComponent(props){
+
+function PostComponent(props) {
     console.log("post");
     console.log(props);
     return (
-        <div>post 40 dniowy</div>
+        <div>
+            <Alert color="warning">{props.post.data}</Alert>
+            <Media>
+                <Media body>
+                    <Media heading>
+                        {props.post.author} 
+                    </Media>
+                        {props.post.text}
+                </Media>
+            </Media>
+            
+        </div>
     )
 }
 
