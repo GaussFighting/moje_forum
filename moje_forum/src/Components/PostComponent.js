@@ -4,9 +4,10 @@ import { Media, Alert, Button } from 'reactstrap';
 
 function PostComponent(props) {
 console.log(props);
+
+
     return (
-        <div key={JSON.stringify(props.id)}>
-            <Alert color="warning">{props.data}</Alert>
+        <div>
             <Media>
                 <Media body>
                     <Media heading>
@@ -15,7 +16,8 @@ console.log(props);
                         {props.text}
                 </Media>
             </Media>
-            
+            <Alert color="warning">{props.data}</Alert>
+            <Button onClick={() => props.deletePost(props.id)}> Delete </Button>
         </div>
     )
 }
