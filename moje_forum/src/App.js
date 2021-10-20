@@ -1,12 +1,13 @@
 import 'bootstrap/dist/css/bootstrap.css';
 import './App.css';
-
-import MainComponent from './Components/MainComponent';
+import React from "react";
+import NewMacros from './Components/NewMacros';
 
 function App() {
   return (
     <div className="App">
-      <MainComponent />
+      {/* <MainComponent/> */}
+      <NewMacros />
     </div>
   );
 }
